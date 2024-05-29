@@ -5,7 +5,7 @@ CVE-2023-45866 - BlueDucky Implementation (Using DuckyScript)
 
 Unauthenticated Peering Leading to Code Execution (Using HID Keyboard)
 
-## Installation and Usage 🛠️
+## Installation and Usage 
 
 ### Setup Instructions for Debian-based 
 
@@ -16,8 +16,8 @@ sudo apt-get -y upgrade
 
 # install dependencies from apt
 sudo apt install -y bluez-tools bluez-hcidump libbluetooth-dev \
-                    git gcc python3-pip python3-setuptools \
-                    python3-pydbus
+sudo apt install -y git gcc python3-pip python3-setuptools \
+sudo apt install -y python3-pydbus
 
 # install pybluez from source
 git clone https://github.com/pybluez/pybluez.git
@@ -58,65 +58,11 @@ sudo cp bdaddr /usr/local/bin/
 ```bash
 git clone https://github.com/pentestfunctions/BlueDucky.git
 cd BlueDucky
+pip3 install -r requirements.txt
 sudo hciconfig hci0 up
 python3 BlueDucky.py
 ```
 
-alternatively,
-
-```bash
-pip3 install -r requirements.txt
-```
-
-## Operational Steps 🕹️
-1. On running, it prompts for the target MAC address.
-2. Pressing nothing triggers an automatic scan for devices.
-3. Devices previously found are stored in known_devices.txt.
-4. If known_devices.txt exists, it checks this file before scanning.
-5. Executes using payload.txt file.
-6. Successful execution will result in automatic connection and script running.
-
-## Duckyscript 💻
-🚧 Work in Progress:
-- Suggest me ideas
-
-## Version 2.1 🐛
-- Updated UI
-- Improved User Experience
-- Bluetooth Debugger; Checks your bluetooth adapters, and installed dependancies before allowing access to the application, this is to prevent devices that are not supported.
-- Please Note: Numerous Changes have been made,please reference the commit history for specific changes.
-  
-## What's Planned for the Next Release?
-- Integrated DuckyScript Console for attacks that want to maintain persistance, after a payload has been ran
-- Suggest What Should be added next! Join https://discord.gg/HackNexus
-
-#### 📝 Example payload.txt:
-```bash
-REM Title of the payload
-STRING ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_-=+\|[{]};:'",<.>/?
-GUI D
-```
-
-```bash
-REM Opens a private browser to hackertyper.net
-DELAY 200
-ESCAPE
-GUI d
-ALT ESCAPE
-GUI b
-DELAY 700
-REM PRIVATE_BROWSER is equal to CTRL + SHIFT + N
-PRIVATE_BROWSER
-DELAY 700
-CTRL l
-DELAY 300
-STRING hackertyper.net
-DELAY 300
-ENTER
-DELAY 300
-```
-
-## Enjoy experimenting with BlueDucky! 🌟
 
 
 
