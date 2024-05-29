@@ -1,36 +1,9 @@
-# BlueDucky Ver 2.1 (Android) 🦆
+# BlueDucky
 
-Thanks to all the people at HackNexus. Make sure you come join us on VC !
-https://discord.gg/HackNexus
 
-NOTES: I will not be able to run this on a laptop or other device outside of a raspberry pi for testing. Due to this, any issues you have will need to be resolved amonsgt each other as I do not have the spare funds to buy an adapter. 
+CVE-2023-45866 - BlueDucky Implementation (Using DuckyScript)
 
-1. [saad0x1's GitHub](https://github.com/saad0x1)
-2. [spicydll's GitHub](https://github.com/spicydll)
-3. [lamentomori's GitHub](https://github.com/lamentomori)
-
-<p align="center">
-  <img src="./images/duckmenu.png">
-</p>
-
-🚨 CVE-2023-45866 - BlueDucky Implementation (Using DuckyScript)
-
-🔓 Unauthenticated Peering Leading to Code Execution (Using HID Keyboard)
-
-[This is an implementation of the CVE discovered by marcnewlin](https://github.com/marcnewlin/hi_my_name_is_keyboard)
-
-<p align="center">
-  <img src="./images/BlueDucky.gif">
-</p>
-
-## Introduction 📢
-BlueDucky is a powerful tool for exploiting a vulnerability in Bluetooth devices. By running this script, you can:
-
-1. 📡 Load saved Bluetooth devices that are no longer visible but have Bluetooth still enabled.
-2. 📂 Automatically save any devices you scan.
-3. 💌 Send messages via ducky script format to interact with devices.
-
-I've successfully run this on a Raspberry Pi 4 using the default Bluetooth module. It works against various phones, with an interesting exception for a New Zealand brand, Vodafone.
+Unauthenticated Peering Leading to Code Execution (Using HID Keyboard)
 
 ## Installation and Usage 🛠️
 
