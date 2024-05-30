@@ -56,7 +56,7 @@ sudo cp bdaddr /usr/local/bin/
 
 ## Running BlueDucky
 ```bash
-git clone https://github.com/pentestfunctions/BlueDucky.git
+git clone https://github.com/3xpell14rmu5/Blueducky.git
 cd BlueDucky
 pip3 install -r requirements.txt
 sudo hciconfig hci0 up
